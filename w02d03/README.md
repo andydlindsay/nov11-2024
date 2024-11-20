@@ -5,63 +5,28 @@
 - [x] TCP introduction
 - [x] TCP demo
 
-### Networking
-* a series of computers connected together
-* any computer on the network can talk to any other computer on the network
+### What is networking?
+- Communication between machines on a network
 
-ISP
+### What is a protocol?
+- A defined standard for how requests and responses are sent between network devices
 
-### IP
-* Internet Protocol
-* provide a unique address for every computer on the network
-* street address
-* IPv4 192.168.8.8
-* IPv6 2001:db8:3333:4444:5555:6666:7777:8888 (June 6th)
+### Transport Layer Protocols
+- Break data into packets to be sent over the network layer
+- Give each packet a header with origin and destination
+- **UDP**: **U**ser **D**atagram **P**rotocol
+  - Smaller header size (8 bytes) which results in smaller packet sizes
+  - _Connectionless_ ie. there is no need to establish or maintain a connection
+  - No error recovery (any corrupted packets are discarded)
+  - Packets can arrive in any order
+  - Useful for streaming/low latency applications
+- **TCP**: **T**ransmission **C**ontrol **P**rotocol
+  - Larger header size (20 bytes)
+  - Requires a connection (3-way handshake)
+  - Corrupted packets are reported to the server and are re-sent
+  - Packets arrive in order
+  - Useful when guaranteed communication is needed
 
-### Port
-* uniquely identifies one running process on your computer
-* 65,535 ports to choose from
-  * <1000 reserved for other purposes
-  * SSH 22
-  * HTTP 80
-  * HTTPS 443
-  * Postgres 5432
-  * dev 3000-9000
-
-### Packets
-* broken down into same sized packets
-* header => origin and destination
-* find it's own way to the destination
-
-### TCP
-* Transmission Control Protocol
-* requires a connection (3-way handshake)
-* missing packets are re-sent
-* packets are re-ordered on arrival
-
-### UDP
-* User Datagram Protocol
-* connectionless
-* missing packets are lost
-* packets arrive in any order
-
-servers => has information
-clients => want information
-
-### Event-driven Programming
-* the code we write won't run on server start
-* only runs in response to particular events occurring
-
-server.on('connection', () => {})
-button.on('click', () => {})
-form.on('submit', () => {})
-
-
-console.log() \n
-process.stdout.write()  Socket object
-light
-
-client for a snek
-
-connection.write("Move: up")
-"Move: down"
+### Useful Links
+* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+* [Net package documentation](https://nodejs.org/api/net.html)
