@@ -22,15 +22,13 @@ promise
     console.log('inside the .finally')
   })
 
-
-higherOrderFunc((err, data) => {
-  if (err) {
-    // handle the error
-  }
-  higherOrderFunc((err, data) => {
-    if (err) {
-      // handle the error
-    }
-  })
-})
-
+// higherOrderFunc((err, data) => {
+//   if (err) {
+//     // handle the error
+//   }
+//   higherOrderFunc((err, data) => {
+//     if (err) {
+//       // handle the error
+//     }
+//   })
+// })

@@ -4,7 +4,6 @@
 
 // arr.map().filter().sort()
 
-
 const promiseGenerator = require('./generators/generate-promise');
 
 const promiseOne = promiseGenerator('promise one');
@@ -25,4 +24,4 @@ promiseGenerator('promise one')
   .catch(() => {
     console.log('inside the .catch');
     return 'default value';
-  })
+  });

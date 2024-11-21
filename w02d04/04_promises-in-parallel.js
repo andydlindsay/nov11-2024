@@ -19,9 +19,9 @@ Promise.all(promises)
     console.log(allResolvedValues);
 
     const resolvedValueOne = allResolvedValues[0];
-  })
+  });
 
 Promise.race(promises)
   .then((resolvedValue) => {
     console.log('this was the fastest promise', resolvedValue);
-  })
+  });
