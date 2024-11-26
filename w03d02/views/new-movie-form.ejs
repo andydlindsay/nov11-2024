@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a new movie!</title>
+</head>
+<body>
+  <h1>Create a movie below!</h1>
+
+  <form method="POST" action="/movies">
+    <label>Title</label>
+    <input name="title" />
+    <br/>
+    <label>Director</label>
+    <input name="director" />
+    <br/>
+    <label>Year</label>
+    <input name="year" />
+    <br/>
+    <label>Genre</label>
+    <input name="genre" />
+    <br/>
+    <button type="submit">Create</button>
+  </form>
+</body>
+</html>
