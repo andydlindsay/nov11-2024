@@ -13,7 +13,10 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev')); // logger
 app.use(express.urlencoded({ extended: false })); // creates and populates req.body
 
-// READ - GET /movies
+//////////////
+// READ
+//////////////
+
 app.get('/movies', (req, res) => {
   const templateVars = {
     movies,
@@ -22,7 +25,9 @@ app.get('/movies', (req, res) => {
   res.render('movies', templateVars);
 });
 
+//////////////
 // CREATE
+//////////////
 
 // GET /movies/new
 app.get('/movies/new', (req, res) => {
@@ -58,7 +63,10 @@ app.post('/movies', (req, res) => {
   res.redirect('/movies'); // tells the browser to make a GET request
 });
 
+//////////////
 // DELETE
+//////////////
+
 app.post('/movies/:id/delete', (req, res) => {
   // grab the info from the url
   const movieId = req.params.id;
@@ -70,7 +78,9 @@ app.post('/movies/:id/delete', (req, res) => {
   res.redirect('/movies');
 });
 
+//////////////
 // UPDATE
+//////////////
 
 // GET /movies/:id/edit
 app.get('/movies/:id/edit', (req, res) => {
