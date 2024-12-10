@@ -50,7 +50,7 @@
 
 ### Student Suggestion: Music Tour App
 
-![]()
+![Music Tour App](https://raw.githubusercontent.com/andydlindsay/nov11-2024/refs/heads/main/w05d02/music%20app.drawio.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
