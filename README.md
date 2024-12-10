@@ -8,3 +8,4 @@
 * [W03D04 - Security & Real World HTTP Servers](/w03d04/)
 * [W04D01 - Intro to CSS](/w04d01/)
 * [W04D03 - AJAX](/w04d03/)
+* [W05D02 - Database Design](/w05d02/)
