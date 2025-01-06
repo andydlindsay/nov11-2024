@@ -11,3 +11,4 @@
 * [W05D02 - Database Design](/w05d02/)
 * [W05D05 - Mid-term Project Kickoff](/w05d05/)
 * [BREAKOUT - Express Router](/breakout-express-router/)
+* [W07D02 - What is React State?](/w07d02/)
