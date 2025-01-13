@@ -1,0 +1,15 @@
+.videogame {
+  border: 2px solid pink;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.videogame h2 {
+  color: magenta;
+}
+
+.videogame footer {
+  display: flex;
+  justify-content: space-between;
+}
