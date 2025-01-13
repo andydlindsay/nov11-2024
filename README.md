@@ -12,3 +12,4 @@
 * [W05D05 - Mid-term Project Kickoff](/w05d05/)
 * [BREAKOUT - Express Router](/breakout-express-router/)
 * [W07D02 - What is React State?](/w07d02/)
+* [W08D01 - React Review](/w08d01/)
